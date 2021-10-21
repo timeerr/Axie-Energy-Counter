@@ -86,9 +86,9 @@ class MainWidget(QWidget):
         self.minus_one.pressed.connect(self.decrease)
 
     def keyPressEvent(self, event):
-        if event.key() in (Qt.Key_Plus, Qt.Key_Right):
+        if event.key() in (Qt.Key_Plus, Qt.Key_Right,Qt.Key_Up):
             self.increase()
-        if event.key() in (Qt.Key_Minus, Qt.Key_Left):
+        if event.key() in (Qt.Key_Minus, Qt.Key_Left, Qt.Key_Down):
             self.decrease()
 
     def increase(self):
